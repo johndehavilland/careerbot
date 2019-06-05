@@ -1,0 +1,107 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "jobFinder",
+  "desc": "",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "FindJob"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "jobtype",
+      "roles": []
+    },
+    {
+      "name": "location",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "i am looking for a job",
+      "intent": "FindJob",
+      "entities": []
+    },
+    {
+      "text": "i am looking for azure jobs in boston",
+      "intent": "FindJob",
+      "entities": [
+        {
+          "entity": "jobtype",
+          "startPos": 17,
+          "endPos": 21
+        },
+        {
+          "entity": "location",
+          "startPos": 31,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "i am looking for it jobs",
+      "intent": "FindJob",
+      "entities": [
+        {
+          "entity": "jobtype",
+          "startPos": 17,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "i am looking for jobs in ny",
+      "intent": "FindJob",
+      "entities": [
+        {
+          "entity": "location",
+          "startPos": 25,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "show me cloud jobs in detroit",
+      "intent": "FindJob",
+      "entities": [
+        {
+          "entity": "jobtype",
+          "startPos": 8,
+          "endPos": 12
+        },
+        {
+          "entity": "location",
+          "startPos": 22,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "show me some it jobs",
+      "intent": "FindJob",
+      "entities": [
+        {
+          "entity": "jobtype",
+          "startPos": 13,
+          "endPos": 14
+        }
+      ]
+    }
+  ],
+  "settings": []
+}
